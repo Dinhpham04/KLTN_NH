@@ -529,7 +529,7 @@ export default function CustomerChatbotPage() {
       <Content
         style={{
           padding: "12px",
-          paddingTop: "76px",
+          // paddingTop: "76px",
           paddingBottom: "150px",
         }}
       >
@@ -540,6 +540,7 @@ export default function CustomerChatbotPage() {
             display: "flex",
             flexDirection: "column",
             gap: 12,
+            paddingTop: 76, // Khoảng cách từ header
             // Hide scrollbar for mobile
             scrollbarWidth: "none", // Firefox
             msOverflowStyle: "none", // IE/Edge
@@ -870,7 +871,6 @@ export default function CustomerChatbotPage() {
           "Món đặc trưng",
           "Đồ ăn cho 2 người",
           "Món ít cay",
-          "Món chay",
           "Giá dưới 100k",
         ].map((suggestion, i) => (
           <Button

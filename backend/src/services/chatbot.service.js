@@ -201,7 +201,7 @@ export async function reply(message, history = []) {
       ${menuList}
 
       Nhiệm vụ:
-      - Giới thiệu menu, các món ăn có trong nhà hàng từ 3 - 5 món phù hợp nhất với yêu cầu của khách
+      - Giới thiệu menu, các món ăn có trong nhà hàng từ 2 - 3 món phù hợp nhất với yêu cầu của khách
       - Trả lời thắc mắc về giá cả, mô tả món ăn (bạn có thể dùng thông tin từ internet nếu cần thiết)
       - Cung cấp thông tin về danh mục món ăn
       - CHỈ chọn món CÓ TRONG MENU, KHÔNG bịa thêm
@@ -350,7 +350,7 @@ export async function reply(message, history = []) {
     console.debug("[ChatbotV2] Sending messages to OpenAI:", JSON.stringify(messages, null, 2));
 
     const completion = await openai.chat.completions.create({
-      model: "gemini-2.5-flash-lite",
+      model: "gemini-2.5-flash",
       // model: "gemini-robotics-er-1.5-preview",
       messages: messages,
       // temperature: 0.7,
